@@ -1,0 +1,74 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+section.home .post:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.profile__background {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.profile__background img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(0.5px);
+}
+
+.profile {
+    position: relative;
+}
+
+.profile__name {
+    max-width: 280px;
+}
+
+.profile__avatar {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.avatar {
+    position: relative;
+   background-repeat: repeat;
+}
+
+.avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-link {
+    padding: 5px 10px;
+    border: 1px solid #EDF2F7;
+    margin: 10px;
+    border-radius: 0.3rem;
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    outline: none;
+}
+
+.page-link:hover {
+    color: #fff;
+    background-color: #4298E1;
+    border: 1px solid #fff;
+}
+
+.page-item.active .page-link {
+    background-color: #4298E1;
+    color: #fff;
+}
